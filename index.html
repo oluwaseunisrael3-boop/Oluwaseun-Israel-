@@ -3660,9 +3660,34 @@ Send Prayer Request
 
 </section>
 <script>
+
+function openTelegram(){
+window.open("https://t.me/gozominternational","_blank");
+}
+
+function openMixlr(){
+window.open("https://prophet-oluwaseun-israel.mixlr.com/events/4925779","_blank");
+}
+
+function loadDevotional(){
+const devotional = document.getElementById("daily-devotional");
+if(devotional){
+devotional.innerHTML = "Today's devotional will appear here.";
+}
+}
+
+function loadBibleReading(){
+const bible = document.getElementById("bible-reading");
+if(bible){
+bible.innerHTML = "Today's One-Year Bible Reading will appear here.";
+}
+}
+
 document.addEventListener("DOMContentLoaded", function(){
-console.log("Site loaded");
+loadDevotional();
+loadBibleReading();
 });
+
 </script>
 
 </body>
