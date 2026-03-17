@@ -1103,26 +1103,6 @@ footer{
 .social-btn:hover{background:rgba(212,160,23,0.15);border-color:var(--gold);transform:translateY(-3px);}
 
 /* ── PODCAST ── */
-.podcast-list{max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:16px;}
-.podcast-item{
-  background:linear-gradient(135deg,rgba(26,36,96,0.5),rgba(10,14,42,0.7));
-  border:1px solid rgba(212,160,23,0.15);border-radius:4px;
-  padding:20px 24px;display:flex;align-items:center;gap:20px;
-  transition:all .3s;
-}
-.podcast-item:hover{border-color:rgba(212,160,23,0.4);}
-.podcast-play-btn{
-  width:48px;height:48px;border-radius:50%;flex-shrink:0;
-  background:linear-gradient(135deg,var(--gold),var(--gold2));
-  display:flex;align-items:center;justify-content:center;
-  font-size:1rem;cursor:pointer;color:var(--navy);font-weight:700;
-  transition:transform .2s,box-shadow .2s;
-}
-.podcast-play-btn:hover{transform:scale(1.1);box-shadow:0 0 20px rgba(212,160,23,0.4);}
-.podcast-info{flex:1;}
-.podcast-title{font-family:'Cinzel',serif;font-size:1rem;color:var(--white);margin-bottom:4px;}
-.podcast-meta{font-family:'Lato',sans-serif;font-size:.75rem;letter-spacing:1px;color:var(--silver);}
-.podcast-duration{font-family:'Lato',sans-serif;font-size:.78rem;color:var(--gold);flex-shrink:0;}
 
 /* ── TRANSLATOR ── */
 .translate-bar{
@@ -2138,93 +2118,6 @@ Get The Book
 </section>
 
 
-<!-- ══ VIDEO GALLERY ══ -->
-<section style="background:var(--navy);padding:90px 40px;" id="videos">
-  <p class="section-label">Watch & Be Transformed</p>
-  <h2 class="section-title">Video <span>Gallery</span></h2>
-  <div class="section-divider"></div>
-  <p class="section-intro">Messages that carry the fire of God. Watch, share, and let heaven speak to you through these teachings.</p>
-
-  <div style="max-width:1100px;margin:0 auto;" class="reveal">
-    <!-- Featured Video -->
-    <div style="margin-bottom:40px;background:linear-gradient(135deg,rgba(26,36,96,0.5),rgba(10,14,42,0.7));
-      border:1px solid rgba(212,160,23,0.3);border-radius:4px;overflow:hidden;">
-      <div style="position:relative;padding-bottom:56.25%;height:0;background:#000;">
-        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
-          background:linear-gradient(135deg,#0a0e2a,#1a2460);flex-direction:column;gap:20px;cursor:pointer;"
-          id="featuredVideoPlaceholder" onclick="loadFeaturedVideo()">
-          <div style="width:80px;height:80px;border-radius:50%;
-            background:linear-gradient(135deg,var(--gold),var(--gold2));
-            display:flex;align-items:center;justify-content:center;
-            font-size:2rem;box-shadow:0 0 40px rgba(212,160,23,0.5);
-            transition:transform .2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">▶</div>
-          <p style="font-family:'Cinzel',serif;color:var(--white);font-size:1.2rem;">Featured Message</p>
-          <p style="font-family:'Lato',sans-serif;font-size:.8rem;letter-spacing:2px;color:var(--gold);text-transform:uppercase;">
-            Paste your YouTube link below to activate</p>
-        </div>
-        <iframe id="featuredVideoFrame" style="position:absolute;top:0;left:0;width:100%;height:100%;display:none;"
-          frameborder="0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture"
-          allowfullscreen></iframe>
-      </div>
-      <div style="padding:24px 28px;">
-        <p style="font-family:'Lato',sans-serif;font-size:.72rem;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:8px;">Featured Message</p>
-        <h3 style="font-family:'Cinzel',serif;font-size:1.3rem;color:var(--white);margin-bottom:8px;">You Are Not the Prey — You Are the Enforcer</h3>
-        <p style="color:var(--silver);font-size:.95rem;">Kingdom Authority Series · Apostle Oluwaseun Israel · Gozom International</p>
-      </div>
-    </div>
-
-    <!-- Video Grid -->
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;" id="videoGrid">
-      <!-- Video cards — add YouTube embed IDs here -->
-      <div class="video-card" style="background:linear-gradient(135deg,rgba(26,36,96,0.5),rgba(10,14,42,0.7));
-        border:1px solid rgba(212,160,23,0.15);border-radius:4px;overflow:hidden;
-        transition:all .3s;cursor:pointer;" onmouseover="this.style.borderColor='rgba(212,160,23,0.4)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='rgba(212,160,23,0.15)';this.style.transform='translateY(0)'">
-        <div style="height:170px;background:linear-gradient(135deg,#0a0e2a,#1a2460);display:flex;align-items:center;justify-content:center;position:relative;">
-          <div style="width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold2));display:flex;align-items:center;justify-content:center;font-size:1.1rem;box-shadow:0 0 25px rgba(212,160,23,0.4);">▶</div>
-          <span style="position:absolute;bottom:10px;right:12px;background:rgba(0,0,0,0.7);color:var(--gold);font-family:'Lato',sans-serif;font-size:.7rem;padding:3px 8px;border-radius:2px;">ADD YOUTUBE ID</span>
-        </div>
-        <div style="padding:18px 20px;">
-          <p style="font-family:'Lato',sans-serif;font-size:.68rem;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:6px;">Kingdom Authority</p>
-          <h4 style="font-family:'Cinzel',serif;font-size:1rem;color:var(--white);line-height:1.4;">If You Walk in Wisdom, You Walk in Power</h4>
-        </div>
-      </div>
-      <div class="video-card" style="background:linear-gradient(135deg,rgba(26,36,96,0.5),rgba(10,14,42,0.7));
-        border:1px solid rgba(212,160,23,0.15);border-radius:4px;overflow:hidden;
-        transition:all .3s;cursor:pointer;" onmouseover="this.style.borderColor='rgba(212,160,23,0.4)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='rgba(212,160,23,0.15)';this.style.transform='translateY(0)'">
-        <div style="height:170px;background:linear-gradient(135deg,#1a0a0a,#3a1a2a);display:flex;align-items:center;justify-content:center;position:relative;">
-          <div style="width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold2));display:flex;align-items:center;justify-content:center;font-size:1.1rem;box-shadow:0 0 25px rgba(212,160,23,0.4);">▶</div>
-          <span style="position:absolute;bottom:10px;right:12px;background:rgba(0,0,0,0.7);color:var(--gold);font-family:'Lato',sans-serif;font-size:.7rem;padding:3px 8px;border-radius:2px;">ADD YOUTUBE ID</span>
-        </div>
-        <div style="padding:18px 20px;">
-          <p style="font-family:'Lato',sans-serif;font-size:.68rem;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:6px;">Holy Spirit Series</p>
-          <h4 style="font-family:'Cinzel',serif;font-size:1rem;color:var(--white);line-height:1.4;">Do Not Grieve Him — The Person of the Holy Spirit</h4>
-        </div>
-      </div>
-      <div class="video-card" style="background:linear-gradient(135deg,rgba(26,36,96,0.5),rgba(10,14,42,0.7));
-        border:1px solid rgba(212,160,23,0.15);border-radius:4px;overflow:hidden;
-        transition:all .3s;cursor:pointer;" onmouseover="this.style.borderColor='rgba(212,160,23,0.4)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='rgba(212,160,23,0.15)';this.style.transform='translateY(0)'">
-        <div style="height:170px;background:linear-gradient(135deg,#0a1a0a,#1a3a1a);display:flex;align-items:center;justify-content:center;position:relative;">
-          <div style="width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold2));display:flex;align-items:center;justify-content:center;font-size:1.1rem;box-shadow:0 0 25px rgba(212,160,23,0.4);">▶</div>
-          <span style="position:absolute;bottom:10px;right:12px;background:rgba(0,0,0,0.7);color:var(--gold);font-family:'Lato',sans-serif;font-size:.7rem;padding:3px 8px;border-radius:2px;">ADD YOUTUBE ID</span>
-        </div>
-        <div style="padding:18px 20px;">
-          <p style="font-family:'Lato',sans-serif;font-size:.68rem;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:6px;">Prophetic Series</p>
-          <h4 style="font-family:'Cinzel',serif;font-size:1rem;color:var(--white);line-height:1.4;">Understanding the Prophetic — Hearing God Clearly</h4>
-        </div>
-      </div>
-    </div>
-
-    <!-- How to add videos instruction box -->
-    <div style="margin-top:32px;padding:20px 28px;background:rgba(212,160,23,0.05);
-      border:1px dashed rgba(212,160,23,0.3);border-radius:4px;text-align:center;">
-      <p style="font-family:'Lato',sans-serif;font-size:.82rem;color:var(--gold);letter-spacing:1px;">
-        📹 <strong>To add your videos:</strong> Copy the YouTube video ID from your video URL
-        (e.g. youtube.com/watch?v=<strong>XXXXXXXX</strong>) and replace "ADD YOUTUBE ID" in the code.
-        Each video card supports any YouTube link.
-      </p>
-    </div>
-  </div>
-</section>
 
 <!-- ══ TESTIMONIES ══ -->
 <section style="background:linear-gradient(180deg,var(--dark),var(--navy2));padding:90px 40px;" id="testimonies">
