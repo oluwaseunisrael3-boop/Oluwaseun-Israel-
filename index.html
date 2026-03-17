@@ -2219,51 +2219,29 @@ Get The Book
 </section>
 
 <!-- ══ VIDEO GALLERY ══ -->
-<section style="background:var(--navy);padding:90px 40px;" id="videos">
-  <p class="section-label">Watch &amp; Be Transformed</p>
-  <h2 class="section-title">Video <span>Gallery</span></h2>
-  <div class="section-divider"></div>
-  <p class="section-intro">Messages that carry the fire of God. Watch, share, and let heaven speak to you through these teachings.</p>
-  <div style="max-width:1100px;margin:0 auto;" class="reveal">
-    <div style="margin-bottom:40px;background:linear-gradient(135deg,rgba(26,36,96,0.5),rgba(10,14,42,0.7));border:1px solid rgba(212,160,23,0.3);border-radius:4px;overflow:hidden;">
-      <div style="position:relative;padding-bottom:56.25%;height:0;background:#000;">
-        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#0a0e2a,#1a2460);flex-direction:column;gap:20px;cursor:pointer;" id="featuredVideoPlaceholder" onclick="loadFeaturedVideo()">
-          <div style="width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold2));display:flex;align-items:center;justify-content:center;font-size:2rem;box-shadow:0 0 40px rgba(212,160,23,0.5);">&#9658;</div>
-          <p style="font-family:'Cinzel',serif;color:var(--white);font-size:1.2rem;">Featured Message</p>
-          <p style="font-family:'Lato',sans-serif;font-size:.8rem;letter-spacing:2px;color:var(--gold);text-transform:uppercase;">Click to add your YouTube video</p>
-        </div>
-        <iframe id="featuredVideoFrame" style="position:absolute;top:0;left:0;width:100%;height:100%;display:none;" frameborder="0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div style="padding:24px 28px;">
-        <p style="font-family:'Lato',sans-serif;font-size:.72rem;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:8px;">Featured Message</p>
-        <h3 style="font-family:'Cinzel',serif;font-size:1.3rem;color:var(--white);margin-bottom:8px;">You Are Not the Prey &mdash; You Are the Enforcer</h3>
-        <p style="color:var(--silver);font-size:.95rem;">Kingdom Authority Series &middot; Apostle Oluwaseun Israel &middot; Gozom International</p>
-      </div>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-bottom:32px;">
-      <div onclick="addYouTubeVideo(this)" style="background:linear-gradient(135deg,rgba(26,36,96,0.5),rgba(10,14,42,0.7));border:1px solid rgba(212,160,23,0.15);border-radius:4px;overflow:hidden;cursor:pointer;transition:all .3s;" onmouseover="this.style.borderColor='rgba(212,160,23,0.45)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='rgba(212,160,23,0.15)';this.style.transform='translateY(0)'">
-        <div style="height:170px;background:linear-gradient(135deg,#0a0e2a,#1a2460);display:flex;align-items:center;justify-content:center;">
-          <div style="width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold2));display:flex;align-items:center;justify-content:center;font-size:1.1rem;box-shadow:0 0 25px rgba(212,160,23,0.4);">&#9658;</div>
-        </div>
-        <div style="padding:18px 20px;"><p style="font-family:'Lato',sans-serif;font-size:.68rem;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:6px;">Kingdom Authority</p><h4 style="font-family:'Cinzel',serif;font-size:1rem;color:var(--white);line-height:1.4;">If You Walk in Wisdom, You Walk in Power</h4></div>
-      </div>
-      <div onclick="addYouTubeVideo(this)" style="background:linear-gradient(135deg,rgba(26,36,96,0.5),rgba(10,14,42,0.7));border:1px solid rgba(212,160,23,0.15);border-radius:4px;overflow:hidden;cursor:pointer;transition:all .3s;" onmouseover="this.style.borderColor='rgba(212,160,23,0.45)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='rgba(212,160,23,0.15)';this.style.transform='translateY(0)'">
-        <div style="height:170px;background:linear-gradient(135deg,#1a0a0a,#3a1a2a);display:flex;align-items:center;justify-content:center;">
-          <div style="width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold2));display:flex;align-items:center;justify-content:center;font-size:1.1rem;box-shadow:0 0 25px rgba(212,160,23,0.4);">&#9658;</div>
-        </div>
-        <div style="padding:18px 20px;"><p style="font-family:'Lato',sans-serif;font-size:.68rem;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:6px;">Holy Spirit</p><h4 style="font-family:'Cinzel',serif;font-size:1rem;color:var(--white);line-height:1.4;">Do Not Grieve Him &mdash; The Person of the Holy Spirit</h4></div>
-      </div>
-      <div onclick="addYouTubeVideo(this)" style="background:linear-gradient(135deg,rgba(26,36,96,0.5),rgba(10,14,42,0.7));border:1px solid rgba(212,160,23,0.15);border-radius:4px;overflow:hidden;cursor:pointer;transition:all .3s;" onmouseover="this.style.borderColor='rgba(212,160,23,0.45)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='rgba(212,160,23,0.15)';this.style.transform='translateY(0)'">
-        <div style="height:170px;background:linear-gradient(135deg,#0a1a0a,#1a3a1a);display:flex;align-items:center;justify-content:center;">
-          <div style="width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold2));display:flex;align-items:center;justify-content:center;font-size:1.1rem;box-shadow:0 0 25px rgba(212,160,23,0.4);">&#9658;</div>
-        </div>
-        <div style="padding:18px 20px;"><p style="font-family:'Lato',sans-serif;font-size:.68rem;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:6px;">Prophetic</p><h4 style="font-family:'Cinzel',serif;font-size:1rem;color:var(--white);line-height:1.4;">Understanding the Prophetic &mdash; Hearing God Clearly</h4></div>
-      </div>
-    </div>
-    <div style="text-align:center;padding:18px;background:rgba(212,160,23,0.05);border:1px dashed rgba(212,160,23,0.3);border-radius:4px;">
-      <p style="font-family:'Lato',sans-serif;font-size:.82rem;color:var(--gold);">&#128249; Click any video card to add your YouTube video ID. Click the featured area to load a main video.</p>
-    </div>
+
+<section id="media" style="padding:60px 20px; text-align:center; background:#0b0f2f;">
+  
+  <h2 style="color:#d4a017; font-size:28px; margin-bottom:10px;">
+    MEDIA CENTER
+  </h2>
+  
+  <p style="color:#ccc; max-width:600px; margin:0 auto 40px;">
+    Watch powerful messages, teachings, and revival moments from GOZOM International.
+  </p>
+
+  <div style="border:1px solid rgba(212,160,23,0.3); padding:40px; border-radius:10px;">
+    
+    <h3 style="color:white; margin-bottom:15px;">
+      First Message Coming Soon
+    </h3>
+    
+    <p style="color:#aaa;">
+      Our first broadcast will be available here shortly. Stay connected and be expectant.
+    </p>
+
   </div>
+
 </section>
 
 <!-- ══ TESTIMONIES ══ -->
